@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+  <title>珠峰培训 - 微信：18310612838</title>
+  <!-- 页面关键字的加入 -->
+  <meta name="keyword"
+    content="技术体系：HTML5、CSS3、JAVASCRIPT、ES6、AJAX、NODE、VUE、REACT、小程序、FLUTTER等；课程体系：零基础就业课、在线框架课、全栈架构课；学前端就选珠峰，十年只做前端！">
+</head>
+
+<body>
+  <!-- COMPUTED REM -->
+  <script>
+    ~ function () {
+      let event = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+      let computed = () => {
+        let HTML = document.documentElement,
+          deviceW = HTML.clientWidth,
+          designW = 750,
+          ratio = deviceW / designW * 100;
+        if (deviceW >= designW) ratio = 100;
+        HTML.style.fontSize = ratio + 'px';
+        window.ratio = ratio;
+      }
+      computed();
+      window.addEventListener(event, computed);
+    }();
+  </script>
+
+  <div id="root"></div>
+</body>
+
+</html>
